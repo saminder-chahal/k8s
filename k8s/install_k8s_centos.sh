@@ -1,5 +1,9 @@
 # URL: https://phoenixnap.com/kb/how-to-install-kubernetes-on-centos
 
+###
+#We are assuming docker is already installed and running in stable state
+###
+
 cat <<EOF > /etc/yum.repos.d/kubernetes.repo
 [kubernetes]
 name=Kubernetes
@@ -49,7 +53,7 @@ echo "======================================="
 echo "======================================="
 # Update Iptable Settings
 echo "Updating Iptable Setttings"
-cat  < /etc/sysctl.d/master_node_name
+cat <<EOF > /etc/sysctl.d/master_node_name
 net.bridge.bridge-nf-call-ip6tables = 1
 net.bridge.bridge-nf-call-iptables = 1
 EOF
