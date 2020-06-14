@@ -5,7 +5,18 @@ sudo kubectl apply -f https://raw.githubusercontent.com/coreos/flannel/master/Do
 echo "========================================================"
 echo "========================================================"
 echo "Creating the Cluster"
-sudo kubeadm init –pod-network-cidr=10.244.0.0/16
+sudo kubeadm init --pod-network-cidr=10.244.0.0/16
+## RESET kubeadm init run "kubeadm reset"
+
+
+echo "========================================================"
+echo "========================================================"
+echo "Enabling Kubelet"
+systemctl enable kubelet
+systemctl start kubelet
+systemctl status kubelet
+#DEBUG: sudo journalctl -xeu kubelet
+## some of the configs files might be missing just use kubeadm init first; then try to restart kubelet
 
 echo "========================================================"
 echo "========================================================"

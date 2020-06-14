@@ -18,12 +18,6 @@ echo "======================================="
 echo "======================================="
 echo "Installing Kubelet Kubeadm and Kubectl"
 yum install -y kubelet kubeadm kubectl
-echo "======================================="
-echo "======================================="
-echo "Enabling Kubelet"
-systemctl enable kubelet
-systemctl start kubelet
-
 
 echo "======================================="
 echo "======================================="
@@ -35,6 +29,7 @@ systemctl start firewalld
 echo "======================================="
 echo "======================================="
 ## on Master NODE; add following ports to firewalld
+sudo firewall-cmd --permanent --add-port=8080/tcp  #requred for flannel
 sudo firewall-cmd --permanent --add-port=6443/tcp
 sudo firewall-cmd --permanent --add-port=2379-2380/tcp
 sudo firewall-cmd --permanent --add-port=10250/tcp
