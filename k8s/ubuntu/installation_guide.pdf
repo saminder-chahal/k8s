@@ -1,0 +1,12 @@
+--2021-09-24 21:00:04--  https://acloudguru-content-attachment-production.s3-accelerate.amazonaws.com/1623334133949-Building%20a%20Kubernetes%20Cluster.pdf
+Resolving acloudguru-content-attachment-production.s3-accelerate.amazonaws.com (acloudguru-content-attachment-production.s3-accelerate.amazonaws.com)... 13.224.36.228
+Connecting to acloudguru-content-attachment-production.s3-accelerate.amazonaws.com (acloudguru-content-attachment-production.s3-accelerate.amazonaws.com)|13.224.36.228|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 99254 (97K) [application/pdf]
+Saving to: ‘1623334133949-Building a Kubernetes Cluster.pdf’
+
+     0K .......... .......... .......... .......... .......... 51% 2.01M 0s
+    50K .......... .......... .......... .......... ......    100% 6.88M=0.03s
+
+2021-09-24 21:00:04 (3.06 MB/s) - ‘1623334133949-Building a Kubernetes Cluster.pdf’ saved [99254/99254]
+
