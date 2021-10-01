@@ -3,4 +3,4 @@ https://kubernetes.io/docs/reference/kubectl/cheatsheet/#interacting-with-runnin
 https://kubernetes.io/docs/tasks/debug-application-cluster/resource-usage-monitoring/ 
 
 
-
+sample kubernetes metric server: https://raw.githubusercontent.com/linuxacademy/content-cka-resources/master/metrics-server-components.yaml
