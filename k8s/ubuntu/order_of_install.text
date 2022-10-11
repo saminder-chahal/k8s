@@ -1,0 +1,3 @@
+setup_prereq
+setup_containerd
+install_k8s
