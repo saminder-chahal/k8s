@@ -7,4 +7,4 @@ sudo systemctl restart containerd
 
 echo "disable swap for stable k8s cluster"
 sudo swapoff -a 
-sudo -i '/ swap / s/^\(.*\)$/#\1/g' /etc/fstab
+sudo sed -i '/ swap / s/^\(.*\)$/#\1/g' /etc/fstab
