@@ -1,0 +1,4 @@
+containers in a pod are running on the shared network, meaning containers can communicate using localhost and port number; or same ip address they have in the ifconfig output.
+
+^^ means all the containers in a pod run on same ip address.
+

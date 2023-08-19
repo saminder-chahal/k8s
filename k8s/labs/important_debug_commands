@@ -7,3 +7,9 @@ kubectl apply -f pod pod.yaml --dry-run=client (this is client side dry run)
 kubectl apply -f pod pod.yaml --dry-run (this is server side dry run)
 
 kubectl diff  -f pod.yaml (this will show the changes in pod.yaml as compared to deployed version)
+
+kubectl exec myfirstpod -c container1 -it bash (to access container shell)
+netstat -tulnp (to see open port and listen state)
+netcat -l -p 8000 (this opens the port number to listen on)
+telnet localhost 8000 (to connect to above port )
+
