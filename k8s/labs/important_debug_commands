@@ -13,5 +13,5 @@ netstat -tulnp (to see open port and listen state)
 netcat -l -p 8000 (this opens the port number to listen on)
 telnet localhost 8000 (to connect to above port )
 
-kubectl expose pod podName --port=8000 --target-port=80
+kubectl expose pod podName --port=8000 --target-port=80 --name myfirstservice
 
