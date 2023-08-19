@@ -24,7 +24,7 @@ spec:
         - name: lastName
           value: Chahal
   initContainers:
-    - name: firstInitContainer
+    - name: firstinitcontainer
       image: coolgourav147/nginx-custom
       env:
         - name: myname
