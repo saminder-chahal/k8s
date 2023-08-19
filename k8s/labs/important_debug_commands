@@ -1,0 +1,3 @@
+kubectl explain pods (to get Resource high level metadata)
+
+kubectl explain pods --recursive (to get nested objects information also)
