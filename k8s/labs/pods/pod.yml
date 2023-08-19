@@ -10,3 +10,8 @@ spec:
   containers:
     - name: firstc
       image: coolgourav147/nginx-custom
+      env:
+        - name: myname
+          value: Sam
+        - name: lastName
+          value: Chahal
