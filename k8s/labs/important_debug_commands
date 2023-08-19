@@ -1,3 +1,9 @@
 kubectl explain pods (to get Resource high level metadata)
 
 kubectl explain pods --recursive (to get nested objects information also)
+
+kubectl apply -f pod pod.yaml --dry-run=client (this is client side dry run)
+
+kubectl apply -f pod pod.yaml --dry-run (this is server side dry run)
+
+kubectl diff  -f pod.yaml (this will show the changes in pod.yaml as compared to deployed version)

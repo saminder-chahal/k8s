@@ -4,9 +4,9 @@ kind: Pod
 metadata:
   name: myfirstpod
   labels: 
-    env: test
+    env: tests
 
 spec:
   containers:
-    - name: firstcontainer
+    - name: firstc
       image: coolgourav147/nginx-custom
