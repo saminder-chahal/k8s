@@ -1,0 +1,30 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: multi-container-deployment
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: multi-container-pod 
+  template:
+    metadata:
+      labels:
+        app: multi-container-pod
+    spec:
+      containers:
+        - name: container-1
+          image: schahal13/sam-nodejs:1.3
+          env:
+            - name: port
+              value: "8080"  # Ensure the value is enclosed in double quotes
+          ports:
+            - containerPort: 8080
+
+        - name: container-2
+          image: schahal13/sam-nodejs:1.3
+          env:
+            - name: port
+              value: "8081"  # Ensure the value is enclosed in double quotes
+          ports:
+            - containerPort: 8081
