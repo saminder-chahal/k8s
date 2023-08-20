@@ -2,3 +2,5 @@ containers in a pod are running on the shared network, meaning containers can co
 
 ^^ means all the containers in a pod run on same ip address.
 
+NodePort type exposes that port as a service across all the cluster nodes i.e node1IP:portnumber and node2IP:portnumber will also work.
+

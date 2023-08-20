@@ -14,4 +14,9 @@ netcat -l -p 8000 (this opens the port number to listen on)
 telnet localhost 8000 (to connect to above port )
 
 kubectl expose pod podName --port=8000 --target-port=80 --name myfirstservice
+^^ Kubernetes will create a service that forwards incoming traffic on port 8000 to the pods specified by podName on their port 80. 
+This is useful when you want to expose a specific pod to the network and make it accessible within or outside the cluster. 
+Other pods or services within the cluster can communicate with this service on port 8000, and if the service is of type NodePort or LoadBalancer, it can also be accessed externally.
+
+kubectl expose pod podName --type=NodePort --port=8000 --target-port=80 --name myfirstservice
 
