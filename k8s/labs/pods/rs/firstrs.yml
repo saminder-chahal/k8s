@@ -9,6 +9,16 @@ spec:
   selector:
     matchLabels:
       app: myapp
+    matchExpressions:
+      - key: app
+        operator: In
+        values:
+         - myapp1
+         - myapp2
+      - key: type
+        operator: NotIn
+        values:
+         - backend
   template:
     metadata:
       name: pod
