@@ -15,10 +15,10 @@ resource "azapi_resource_action" "ssh_public_key_gen" {
 resource "azapi_resource" "ssh_public_key" {
   type      = "Microsoft.Compute/sshPublicKeys@2022-11-01"
   name      = random_pet.ssh_key_name.id
-  location  = azurerm_resource_group.rg.location
-  parent_id = azurerm_resource_group.rg.id
+  location  = "eastus"  #Change this 
+  parent_id = "/subscriptions/0cfe2870-d256-4119-b0a3-16293ac11bdc/resourceGroups/1-5914317e-playground-sandbox" # change this
 }
 
 output "key_data" {
-  value = jsondecode(azapi_resource_action.ssh_public_key_gen.output).publicKey
+  value = azapi_resource_action.ssh_public_key_gen.output.publicKey
 }

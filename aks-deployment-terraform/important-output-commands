@@ -1,0 +1,13 @@
+Outputs:
+
+client_certificate = <sensitive>
+client_key = <sensitive>
+cluster_ca_certificate = <sensitive>
+cluster_password = <sensitive>
+cluster_username = <sensitive>
+host = <sensitive>
+key_data = "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABeobE= genre"  (this works taken the actual value out deleted)
+kube_config = <sensitive>
+kubernetes_cluster_name = "cluster-kind-leopard"
+cloud [ ~/k8s/aks-deployment-terraform ]$ terraform output -raw client_certificate (this works taken the actual value out deleted)
+LS0tLS1CRUdJTiZ3Q0FURS0tLS0tCg==
